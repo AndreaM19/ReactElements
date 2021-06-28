@@ -1,0 +1,42 @@
+
+.masonry {
+    margin: 0 auto;
+    column-count: 5;
+    column-gap: 16px;
+    .mItem {
+        display: inline-block;
+        margin-bottom: 16px;
+        width: 100%;
+
+        img {
+            width: 100%;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .masonry {
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1199px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 991px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .masonry {
+        column-count: 1;
+    }
+}

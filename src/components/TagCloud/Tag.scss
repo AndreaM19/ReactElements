@@ -1,0 +1,27 @@
+.tag{
+    position: relative;    
+    border-radius:5px;
+    width: 65px;
+    height: 65px;
+    margin:5px;
+
+    &.m{
+        width: 90px;
+    }
+
+    &.l{
+        width: 120px;
+    }
+
+    &.xl{
+        width: 150px;
+    }
+
+    .name{
+        position: absolute;
+        right: 6px;
+        bottom: 2px;
+        font-size:1rem;
+        font-weight: bold;
+    }
+}
