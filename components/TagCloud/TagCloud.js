@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import Tag from './Tag';
 import './TagCloud.scss';
 
@@ -25,12 +24,14 @@ const TagCloud = props => {
       name: item.name,
       background: props.background,
       color: props.color,
-      size: () => buildSize(item.name)
+      size: () => buildSize(item.name),
+      height: props.height
     }), !props.uniformColor && /*#__PURE__*/React.createElement(Tag, {
       name: item.name,
       background: item.background != null ? item.background : defaultSettings.background,
       color: item.color != null ? item.color : defaultSettings.color,
-      size: () => buildSize(item.name)
+      size: () => buildSize(item.name),
+      height: props.height
     }));
   }));
 };

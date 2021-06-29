@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import Tag from './Tag';
 import './TagCloud.scss';
 
@@ -25,10 +24,10 @@ const TagCloud = (props) => {
                 return (
                     <React.Fragment key={index}>
                         {props.uniformColor && (
-                            <Tag name={item.name} background={props.background} color={props.color} size={() => buildSize(item.name)} />
+                            <Tag name={item.name} background={props.background} color={props.color} size={() => buildSize(item.name)} height={props.height}/>
                         )}
                         {!props.uniformColor && (
-                            <Tag name={item.name} background={item.background != null ? item.background : defaultSettings.background} color={item.color != null ? item.color : defaultSettings.color} size={() => buildSize(item.name)} />
+                            <Tag name={item.name} background={item.background != null ? item.background : defaultSettings.background} color={item.color != null ? item.color : defaultSettings.color} size={() => buildSize(item.name)}  height={props.height}/>
                         )}
                     </React.Fragment>
                 )

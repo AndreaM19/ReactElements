@@ -5,6 +5,13 @@
     height: 65px;
     margin:5px;
 
+    &.tag-sm{
+        height: 35px !important;
+        .name{
+            font-size: 0.8rem !important;
+        }
+    }
+
     &.m{
         width: 90px;
     }

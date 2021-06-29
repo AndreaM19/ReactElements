@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import './Avatar.scss';
 import man from './man.png'
 
@@ -12,12 +11,12 @@ const Avatar = (props) => {
         img: man
     }
 
-    const [config, setConfig] = useState({
+    const config = {
         width: props.size != null ? props.size + "px" : defaultSettings.width,
         height: props.size != null ? props.size + "px" : defaultSettings.height,
         border: props.img != null ? "none" : defaultSettings.border,
         imgUrl: props.img != null ? props.img : defaultSettings.img
-    })
+    };
 
     const buildShadow = (width, hasImage) =>{
 

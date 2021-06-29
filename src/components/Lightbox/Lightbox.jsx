@@ -5,13 +5,9 @@ import "../../assets/icons/aemme-icons.scss";
 
 const Lightbox = (props) => {
     const {
-        textTitle,
-        text,
-        didascalia,
         gallery,
         index,
-        setIndex,
-        textSize
+        setIndex,        
     } = props;
 
     const [show, setShow] = useState(false);
@@ -28,7 +24,7 @@ const Lightbox = (props) => {
             else setImg(gallery[0].url);
             if(index !== -99)setShow(true);
         }
-    }, [index])
+    }, [index, gallery])
 
     const handleNext = () => {
         let i = index + 1;

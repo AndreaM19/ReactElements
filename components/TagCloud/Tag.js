@@ -1,13 +1,16 @@
-import * as React from 'react';
+import React from 'react';
+import { useState, useEffect } from 'react';
 import './Tag.scss';
 
 const Tag = props => {
-  const [size, setSize] = React.useState("");
-  React.useEffect(() => {
+  const [size, setSize] = useState("");
+  const [height, setHeight] = useState("");
+  useEffect(() => {
     setSize(props.size != null ? props.size : "");
-  }, []);
+    setHeight(props.height != null ? "tag-" + props.height : "");
+  }, [props.size, props.height]);
   return /*#__PURE__*/React.createElement("div", {
-    className: "tag shadow " + size,
+    className: "tag " + height + " " + size,
     style: {
       backgroundColor: props.background
     }

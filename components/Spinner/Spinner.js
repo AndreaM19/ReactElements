@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import './Spinner.scss';
 
 const Spinner = props => {
@@ -9,12 +8,12 @@ const Spinner = props => {
     color: "#aeaeae",
     thickness: "2px"
   };
-  const [config, setConfig] = useState({
+  const config = {
     width: props.size != null ? props.size + "px" : defaultSettings.width,
     height: props.size != null ? props.size + "px" : defaultSettings.height,
     color: props.color != null ? props.color : defaultSettings.color,
     thickness: props.thickness != null ? props.thickness + "px" : defaultSettings.thickness
-  });
+  };
   return /*#__PURE__*/React.createElement("div", {
     className: "spinner",
     style: {
