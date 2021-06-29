@@ -4,6 +4,7 @@ import Avatar from './components/Avatar/Avatar';
 import TagCloud from './components/TagCloud/TagCloud';
 import MasonryGallery from './components/MasonryGallery/MasonryGallery';
 import CutOutText from './components/CutOutText/CutOutText';
+import NotFound from './components/NotFound/NotFound';
 import Display from './pageComponents/display/Display';
 import reImg from './assets/re.png'
 import './App.css';
@@ -58,33 +59,39 @@ function App() {
         <h1 className="my-4 fw-lighter">Documentation</h1>
 
         <div className="row align-items-md-stretch">
-          <Display size="6" title="Spinner" listItems={["Size (px)", "Color", "Thickness (px)"]}>
+          <Display size="6" title="Spinner" listItems={["size (px)", "color", "thickness (px)"]}>
             <Spinner></Spinner>            
           </Display>
 
-          <Display size="6" title="Avatar" listItems={["Size (px)", "Img (url)"]}>
+          <Display size="6" title="Avatar" listItems={["size (px)", "img (url)"]}>
             <Avatar size="100"></Avatar>            
           </Display>
 
-          <Display size="6" title="Tag cloud" listItems={["List (object)", "UniformColor (boolean)", "Background", "Color", "Height (none, 'sm')"]}>
+          <Display size="6" title="Tag cloud" listItems={["list (object)", "uniformColor (boolean)", "background", "color", "height (none, 'sm')"]}>
             <TagCloud items={examples.tagList}></TagCloud>            
           </Display>
 
-          <Display size="6" title="Tag cloud (uniform color and small)" listItems={["List (object)", "UniformColor (boolean)", "Background", "Color", "Height (none, 'sm')"]}>
+          <Display size="6" title="Tag cloud (uniform color and small)" listItems={["list (object)", "uniformColor (boolean)", "background", "color", "height (none, 'sm')"]}>
             <TagCloud items={examples.tagList} uniformColor background="#7fcecb" color="#333" height="sm"></TagCloud>            
           </Display>
 
-          <Display size="12" title="Masonry gallery with Lightbox" listItems={["Gallery (object)"]}>
+          <Display size="12" title="Not found" listItems={["theme ('light', 'dark')", "background", "message", "buttonText"]}>
+            <NotFound theme="light" background="#fff" message="Non ho trovato niente nella pagina che hai richiesto!" buttonText="Indietro"></NotFound>            
+          </Display>
+
+          <Display size="12" title="Masonry gallery with Lightbox" listItems={["gallery (object)"]}>
             <MasonryGallery gallery={examples.gallery}></MasonryGallery>
           </Display>
 
-          <Display size="12" title="Cut Out Text" listItems={["Text", "Height (px)", "Color", "Background (url)"]}>
+          <Display size="12" title="Cut Out Text" listItems={["text", "height (px)", "color", "background (url)"]}>
             <CutOutText text="BLUE SKY" height="500" color="#eaeaea" background="https://picsum.photos/id/806/1920/1080"></CutOutText>            
           </Display>
+
+
         </div>
 
         <footer className="pt-3 mt-4 text-muted border-top">
-          &copy; 2021
+        &copy; 2021 Andrea Marchetti
         </footer>
       </div>
     </main >

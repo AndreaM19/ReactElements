@@ -15,13 +15,13 @@ const CutOutText = props => {
     background: props.background != null ? "url(" + props.background + ")" : "url(" + defaultSettings.background + ")"
   };
   return /*#__PURE__*/React.createElement("div", {
-    class: "image-container",
+    className: "image-container",
     style: {
       height: config.height,
       backgroundImage: config.background
     }
   }, /*#__PURE__*/React.createElement("div", {
-    class: "text",
+    className: "text",
     style: {
       backgroundColor: config.color
     }

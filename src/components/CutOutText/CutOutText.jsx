@@ -18,8 +18,8 @@ const CutOutText = (props) => {
     };
 
     return (
-        <div class="image-container" style={{ height: config.height, backgroundImage: config.background }}>
-            <div class="text" style={{ backgroundColor: config.color }}>{config.text}</div>
+        <div className="image-container" style={{ height: config.height, backgroundImage: config.background }}>
+            <div className="text" style={{ backgroundColor: config.color }}>{config.text}</div>
         </div>
     );
 };
