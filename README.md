@@ -2,7 +2,7 @@
 
 ReactElements is a simple React component library that you can use to build your application.
 
-#### Latest version: 1.0.4
+#### Latest version: 1.0.5
 
 ## Install package
 ```sh
@@ -17,6 +17,7 @@ ReactElements includes:
 - Masonry Gallery
 - Cut Out Text
 - 404 Not Found
+- Chat
 
 #### React Components are available in /Components folder
 Here the package structure:
@@ -24,6 +25,7 @@ Here the package structure:
 ```sh
 +-- _Components
 |   +-- Avatar
+|   +-- Chat
 |   +-- CutOutText
 |   +-- MasonryGallery
 |   +-- NotFound
