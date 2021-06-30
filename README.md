@@ -2,7 +2,7 @@
 
 ReactElements is a simple React component library that you can use to build your application.
 
-#### Latest version: 1.0.5
+#### Latest version: 1.0.6
 
 ## Install package
 ```sh
