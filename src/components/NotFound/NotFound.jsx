@@ -37,7 +37,7 @@ const NotFound = (props) => {
                 <h3>Uh oh!!</h3>
                 <h4>{props.message}</h4>
                 <br />
-                <Button variant="info" onClick={_back}>{props.buttonText}</Button>
+                <Button variant="primary" onClick={_back}>{props.buttonText}</Button>
             </div>
         </div>
     );
