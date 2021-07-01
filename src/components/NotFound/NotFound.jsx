@@ -26,12 +26,13 @@ const NotFound = (props) => {
     return (
         <div className={"notFound " + config.theme} style={{ backgroundColor: config.background }}>
             <div className="message">
-                <Row className="justify-content-center">
+                {/* <Row className="justify-content-center">
                     <Col xs="6" sm="4" style={{ textAlign: "right" }}><img src={config.icon} alt="404" /></Col>
                     <Col xs="6" sm="4" style={{ textAlign: "left" }}>
                         <h1>404</h1>
                     </Col>
-                </Row>
+                </Row> */}
+                <h1>404</h1>
                 <br />
                 <h3>Uh oh!!</h3>
                 <h4>{props.message}</h4>

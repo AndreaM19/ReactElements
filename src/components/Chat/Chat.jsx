@@ -1,6 +1,5 @@
 import React from 'react';
 import './Chat.scss';
-//import bg from '../../assets/geometric_bg.jpg';
 
 const Chat = (props) => {
 
