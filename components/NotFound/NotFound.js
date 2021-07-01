@@ -28,24 +28,7 @@ const NotFound = props => {
     }
   }, /*#__PURE__*/React.createElement("div", {
     className: "message"
-  }, /*#__PURE__*/React.createElement(Row, {
-    className: "justify-content-center"
-  }, /*#__PURE__*/React.createElement(Col, {
-    xs: "6",
-    sm: "4",
-    style: {
-      textAlign: "right"
-    }
-  }, /*#__PURE__*/React.createElement("img", {
-    src: config.icon,
-    alt: "404"
-  })), /*#__PURE__*/React.createElement(Col, {
-    xs: "6",
-    sm: "4",
-    style: {
-      textAlign: "left"
-    }
-  }, /*#__PURE__*/React.createElement("h1", null, "404"))), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h3", null, "Uh oh!!"), /*#__PURE__*/React.createElement("h4", null, props.message), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement(Button, {
+  }, /*#__PURE__*/React.createElement("h1", null, "404"), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("h3", null, "Uh oh!!"), /*#__PURE__*/React.createElement("h4", null, props.message), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement(Button, {
     variant: "info",
     onClick: _back
   }, props.buttonText)));

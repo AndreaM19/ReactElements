@@ -1,5 +1,5 @@
 import React from 'react';
-import './Chat.scss'; //import bg from '../../assets/geometric_bg.jpg';
+import './Chat.scss';
 
 const Chat = props => {
   return /*#__PURE__*/React.createElement("div", {
